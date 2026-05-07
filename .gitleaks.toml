@@ -1,0 +1,8 @@
+title = "site.scaffold"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "No repository-specific allowlist entries yet."
+paths = ["^$"]

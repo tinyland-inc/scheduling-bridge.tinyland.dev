@@ -1,0 +1,87 @@
+site.scaffold — Third-Party Attributions
+========================================
+
+This project ships with third-party assets and depends on third-party
+software. The site itself is MIT-licensed (see LICENSE). Each third-party
+inclusion below retains its own license; nothing here is sublicensed.
+
+Bundled fonts (static/fonts/)
+-----------------------------
+
+FiraCode Nerd Font Mono
+  - Base typeface: Fira Code by Nikita Prokopov (tonsky/FiraCode)
+    SIL Open Font License 1.1 — see https://scripts.sil.org/OFL
+    Reserved Font Name: "Fira Code"
+  - Patched glyphs: Nerd Fonts by Ryan L McIntyre (ryanoasis/nerd-fonts)
+    MIT License
+  - Web build (woff2): mshaugh/nerdfont-webfonts redistribution
+  - Subsetted at build time via fontTools.pyftsubset; recipe at
+    scripts/subset-firacode-nerd-font.sh. Subset preserves all OpenType
+    layout features (ligatures, character variants, kerning) and a
+    selected set of Nerd Font glyph blocks (Powerline, Devicons,
+    Pomicons, Font Awesome subset, Latin + common punctuation).
+
+Inter (loaded via @fontsource/inter)
+  - Inter by Rasmus Andersson (rsms.me/inter)
+    SIL Open Font License 1.1 — see https://scripts.sil.org/OFL
+    Reserved Font Name: "Inter"
+
+NPM dependencies (license summary)
+----------------------------------
+
+Permissive-licensed runtime + build dependencies bundled into the
+production site or used for prerendering. None are copyleft.
+
+  MIT             @fontsource/inter (asset under OFL above)
+                  @skeletonlabs/skeleton
+                  @skeletonlabs/skeleton-svelte
+                  @sveltejs/adapter-static
+                  @sveltejs/kit
+                  @sveltejs/vite-plugin-svelte
+                  @tailwindcss/vite
+                  effect
+                  shiki
+                  svelte
+                  tailwindcss
+                  vite
+                  vitest
+                  prettier, prettier-plugin-svelte
+                  eslint, eslint-config-prettier, eslint-plugin-svelte
+                  globals
+                  serve
+                  tsx
+                  typescript
+                  typescript-eslint
+
+  ISC             @lucide/svelte (Svelte 5 native port of Lucide; Lucide itself MIT)
+                  @types/node
+
+  OFL-1.1         (font assets; see "Bundled fonts" above)
+
+  Apache-2.0      @playwright/test
+
+  Zlib            @tummycrypt/tinyvectors
+                  @tummycrypt/tinyland-color-utils
+                  @tummycrypt/vite-plugin-a11y
+                  @tummycrypt/vite-plugin-skeleton-colors
+                  (also dual-licensed under LicenseRef-Tinyland-Proprietary
+                  for first-party Tinyland usage; this site uses the Zlib
+                  arm exclusively.)
+
+Code samples
+------------
+
+Zig source blocks shown on the home page (CredentialLiveness +
+Availability, DegradedReason + DeadReason, MuxDecision +
+fromHttpStatus) are reproduced verbatim from
+github.com/Jesssullivan/oauth-mux at src/types.zig (MIT, same author).
+
+Verbatim quoted ranges live in src/lib/content/cli-examples.ts as
+ZIG_LIVENESS_BLOCK, ZIG_DEAD_DEGRADED, and ZIG_MUX_DECISION exports.
+
+Shiki theme
+-----------
+
+Code highlighting uses the Vitesse light/dark themes by Anthony Fu
+(MIT) bundled with shiki@4.x. No theme file is committed to this
+repository; Shiki resolves them at build time.
