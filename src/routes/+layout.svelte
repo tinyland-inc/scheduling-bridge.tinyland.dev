@@ -38,7 +38,7 @@
 	// M3.3 SEO surface. Static values only — no per-page reactivity.
 	// JSON-LD describes both the WebSite and the SoftwareApplication (the oauth-mux CLI)
 	// so structured-data tooling can resolve "what is this site about" without parsing copy.
-	const SITE_URL = 'https://site.scaffold';
+	const SITE_URL = 'https://scheduling-bridge.tinyland.dev';
 	const SITE_TITLE = 'oauth-mux — Typed OAuth fallback for AI harness accounts';
 	const SITE_DESCRIPTION =
 		'oauth-mux keeps AI coding harness sessions afloat across multiple accounts with typed liveness, redacted discovery, foreground stay-afloat checks, and explicit provider-proof boundaries.';

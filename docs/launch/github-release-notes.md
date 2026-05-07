@@ -2,12 +2,12 @@
 
 > Draft for the next upstream `Jesssullivan/oauth-mux` release. Uses the
 > website launch as the primary CTA. Content is intentionally narrow and
-> matches the voice on https://site.scaffold.
+> matches the voice on https://scheduling-bridge.tinyland.dev.
 
 ## What's new
 
 This release pairs with the launch of the project site at
-**https://site.scaffold** — the canonical place to read the typed fallback
+**https://scheduling-bridge.tinyland.dev** — the canonical place to read the typed fallback
 algebra, the provider matrix, the security posture, and the first-run
 flows in one continuous page.
 
@@ -49,4 +49,4 @@ oauth-mux codex probe-all --capability codex-max --json
 ```
 
 Read the site for the full first-run walkthrough, the provider matrix,
-and the security posture: **https://site.scaffold**.
+and the security posture: **https://scheduling-bridge.tinyland.dev**.

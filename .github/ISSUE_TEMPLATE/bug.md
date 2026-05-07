@@ -1,6 +1,6 @@
 ---
 name: Bug
-about: Report a bug in the site.scaffold site
+about: Report a bug in the scheduling-bridge.tinyland.dev site
 title: ''
 labels: ['bug']
 assignees: ''
@@ -20,7 +20,7 @@ assignees: ''
 
 - Browser:
 - OS:
-- site.scaffold page:
+- scheduling-bridge.tinyland.dev page:
 
 ## Additional Context
 

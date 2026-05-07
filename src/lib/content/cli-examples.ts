@@ -173,10 +173,10 @@ brew install jesssullivan/omux/oauth-mux`;
 export const INSTALL_DEB_RPM = `# deb/rpm packages for Linux hosts
 # release-staged via CI; no public apt/yum repository yet`;
 
-export const INSTALL_CURL = `curl -fsSL https://site.scaffold/install.sh | sh`;
+export const INSTALL_CURL = `curl -fsSL https://scheduling-bridge.tinyland.dev/install.sh | sh`;
 
 export const INSTALL_CURL_OVERRIDE = `# override the source repository (defaults to Jesssullivan/oauth-mux)
-REPO=Jesssullivan/oauth-mux curl -fsSL https://site.scaffold/install.sh | sh`;
+REPO=Jesssullivan/oauth-mux curl -fsSL https://scheduling-bridge.tinyland.dev/install.sh | sh`;
 
 // ─── M3.2 Codex paid cohort path ────────────────────────────────────────────
 // Sources: oauth-mux/docs/onboarding.md + docs/live-provider-qa.md

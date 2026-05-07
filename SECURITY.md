@@ -1,7 +1,7 @@
 # Security policy
 
 This repository is the source for the static marketing/devtool site at
-<https://site.scaffold>. The site itself is purely static — no server
+<https://scheduling-bridge.tinyland.dev>. The site itself is purely static — no server
 runtime, no user accounts, no inbound data, no analytics.
 
 ## Reporting a vulnerability
@@ -10,7 +10,7 @@ Until a public security email is published, please report security
 issues against this site via a **private GitHub security advisory** on
 this repository:
 
-<https://github.com/tinyland-inc/site.scaffold/security/advisories/new>
+<https://github.com/tinyland-inc/scheduling-bridge.tinyland.dev/security/advisories/new>
 
 For vulnerabilities in the **`oauth-mux` tool itself** (the upstream
 Zig project that this site is about), report against the canonical

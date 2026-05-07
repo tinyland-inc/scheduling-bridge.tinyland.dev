@@ -1,4 +1,4 @@
-# site.scaffold — SvelteKit static site task runner
+# scheduling-bridge.tinyland.dev — SvelteKit static site task runner
 # Prerequisites: just, direnv (loads Nix devShell), Nix with flakes
 # Quick Start: direnv allow && just setup && just dev
 #
@@ -140,8 +140,8 @@ install-hooks:
 
 # Show environment info
 info:
-    @echo "Site:    site.scaffold"
-    @echo "Repo:    tinyland-inc/site.scaffold"
+    @echo "Site:    scheduling-bridge.tinyland.dev"
+    @echo "Repo:    tinyland-inc/scheduling-bridge.tinyland.dev"
     @echo "Node:    $(node --version 2>/dev/null || echo 'not available')"
     @echo "pnpm:    $(pnpm --version 2>/dev/null || echo 'not available')"
     @echo "Just:    $(just --version 2>/dev/null || echo 'not available')"
@@ -150,4 +150,4 @@ info:
 
 # View the GitHub repo (opens in browser)
 gh-repo:
-    gh repo view tinyland-inc/site.scaffold --web
+    gh repo view tinyland-inc/scheduling-bridge.tinyland.dev --web

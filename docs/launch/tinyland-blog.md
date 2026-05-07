@@ -13,7 +13,7 @@ quota window has rolled over, or the provider itself is degraded. The
 guess is almost always wrong on the first try.
 
 **oauth-mux** is a small CLI that tries to fix this. It is FOSS, MIT,
-and the project site is at [site.scaffold](https://site.scaffold).
+and the project site is at [scheduling-bridge.tinyland.dev](https://scheduling-bridge.tinyland.dev).
 
 ## Typed fallback, in one paragraph
 
@@ -58,4 +58,4 @@ documented. The provider authoring checklist on the site walks through
 it.
 
 If the multi-account harness pain is something you live with, the site
-is the best place to start: **[site.scaffold](https://site.scaffold)**.
+is the best place to start: **[scheduling-bridge.tinyland.dev](https://scheduling-bridge.tinyland.dev)**.

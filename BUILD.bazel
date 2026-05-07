@@ -1,5 +1,5 @@
 """
-Root BUILD.bazel for site.scaffold.
+Root BUILD.bazel for scheduling-bridge.tinyland.dev.
 
 Minimal: just create the @npm//... node_modules tree. The SvelteKit
 static site is built by `pnpm run build` (vite build) — Bazel does not
