@@ -1,44 +1,44 @@
-# site.scaffold
+# scheduling-bridge.tinyland.dev
 
-Canonical Tinyland house scaffold for **static SvelteKit brand sites**.
+> **Monadic booking middleware for hostile calendar stacks**
 
-Every brand / project / sub-business site under `tinyland-inc` should be created
-from this template (`gh repo create --template tinyland-inc/site.scaffold`) so
-DX, AX, CI, theming, federation, and Bazel integration stay homogenous across
-the enterprise.
+Brute-force your way to scheduling freedom. Acuity, cal.com, Vagaro, GlossGenius backend interop. Companion surface to the @tummycrypt/scheduling-bridge npm package.
+
+## Status
+
+- **Tier:** Tier 2 — strategic
+- **GTM bucket:** FOSS + paired enterprise integration
+- **Stage:** brand surface seeded from `tinyland-inc/site.scaffold` (scheduling-bridge placeholder copy)
+- **Owner:** Tinyland, Inc.
 
 ## Stack
 
-- **Just** — sole authoritative DX/AX entrypoint (`Justfile`)
-- **Nix flake + direnv** — reproducible dev shell (`flake.nix`, `.envrc`)
-- **Bazel 8 + Bzlmod** — RBE-first via `tinyland-inc/bazel-registry`, GloriousFlywheel cache
-- **SvelteKit + adapter-static** — static-only, prerendered
-- **Skeleton 4.15.2** — pinned exact, Tailwind v4 with v4-compat shim
-- **Tummycrypt vite plugins** — `vite-plugin-a11y`, `vite-plugin-skeleton-colors`, `tinyvectors`, `tinyland-color-utils`
-- **CI** — gitleaks secrets-scan, build-and-test, bazel-graph (all run inside `nix develop`)
+Static SvelteKit, Skeleton 4.15.2 (pinned), Tailwind v4, Bazel + Nix + Just per the
+Tinyland house scaffold. No runtime database, no auth at the edge. Federated content
+flows in from `tinyland.dev` via signed `PublicPulseSnapshot` JSON (planned).
 
-## After creating from template
+## Quick start
 
 ```bash
-cd <new-repo>
 direnv allow
-scripts/rebrand.sh <site.example.com>   # rewrites name strings
 just setup
-just check
-just build
+just dev
 ```
 
-## Federation (planned)
+## Federation
 
-Sister sites consume the `tinyland.dev` ActivityPub `PublicPulseSnapshot`
-contract (see `Jesssullivan.github.io/packages/pulse-core`). The `pulse-ingest`
-workflow (TODO) will pull signed snapshots into `static/pulse/` for static
-rendering — no runtime database, no auth tokens at the edge.
+This site is a **passive ingestor** of `tinyland.dev` snapshots:
 
-## Conventions
+- Posts (mdx) — sync from operator's permaspace
+- Products / offers — Schema.org Offer JSON
+- Events / scheduling — scheduling-kit-derived JSON
+- Pulse — `PublicPulseSnapshot` static JSON
 
-- Repo name = domain with dots preserved (e.g. `tinyland-inc/phasi.space`)
-- Default branch: `main`
-- Visibility: public unless explicitly internal
-- Issues / projects: tracked in Linear team `Tinyland`, GH issues mirror
-- Operator/agent contract: `AGENTS.md`
+Wire-up happens once the federation contract is finalized at the
+authority monolith.
+
+## See also
+
+- House scaffold: [`tinyland-inc/site.scaffold`](https://github.com/tinyland-inc/site.scaffold)
+- Authority monolith: [`tinyland-inc/tinyland.dev`](https://github.com/tinyland-inc/tinyland.dev)
+- Internal map of all sister sites: [`tinyland-inc/tinyland.internal`](https://github.com/tinyland-inc/tinyland.internal)

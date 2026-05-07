@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest a new feature or improvement for the site.scaffold site
+about: Suggest a new feature or improvement for the scheduling-bridge.tinyland.dev site
 title: ''
 labels: ['enhancement']
 assignees: ''

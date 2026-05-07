@@ -77,7 +77,7 @@ export const load: PageServerLoad = async ({ fetch }) => {
 
 If you must keep `adapter-static` and still ship a server-flavored route, the
 escape hatch is to split routes by adapter: keep `/` and marketing pages
-prerendered, and host the dynamic surface (e.g. `status.site.scaffold`) as a
+prerendered, and host the dynamic surface (e.g. `status.scheduling-bridge.tinyland.dev`) as a
 separate deployment with its own adapter. Do not introduce ambient
 `+page.server.ts` files into the static build — `adapter-static` will fail
 the prerender pass.

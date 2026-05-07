@@ -2,7 +2,7 @@
 
 Typed OAuth fallback for AI harness accounts.
 
-Project site: **https://site.scaffold** — the canonical reference for the
+Project site: **https://scheduling-bridge.tinyland.dev** — the canonical reference for the
 fallback algebra, provider matrix, security posture, and first-run
 flows.
 
@@ -58,7 +58,7 @@ returns the typed decision per route. Add `--capability codex-max
 - **Planned: Bedrock, Azure.**
 
 The full table (with admission status, probe shape, and per-provider
-citations) lives on https://site.scaffold.
+citations) lives on https://scheduling-bridge.tinyland.dev.
 
 ## Security posture
 
@@ -108,7 +108,7 @@ a probe artifact is the fastest way to promote a provider out of
 
 ## Links
 
-- Site: https://site.scaffold
+- Site: https://scheduling-bridge.tinyland.dev
 - Source: https://github.com/Jesssullivan/oauth-mux
 - Issues / discussions: GitHub
 - License: MIT

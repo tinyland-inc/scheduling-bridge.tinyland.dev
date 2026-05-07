@@ -2,14 +2,14 @@
 
 Date: 2026-04-29
 
-Issue context: Linear `TIN-734` (Publish oauth-mux website and launch narrative), child of `TIN-491` (Done). GitHub `tinyland-inc/site.scaffold`. Source tool: `Jesssullivan/oauth-mux` (public).
+Issue context: Linear `TIN-734` (Publish oauth-mux website and launch narrative), child of `TIN-491` (Done). GitHub `tinyland-inc/scheduling-bridge.tinyland.dev`. Source tool: `Jesssullivan/oauth-mux` (public).
 
 ## Baseline
 
-`site.scaffold` is a fresh repo (`tinyland-inc/site.scaffold`, currently a single
+`scheduling-bridge.tinyland.dev` is a fresh repo (`tinyland-inc/scheduling-bridge.tinyland.dev`, currently a single
 14-byte `README.md` and an `Initial commit`). It will be the public marketing
 and devtool surface for the `oauth-mux` FOSS project. The canonical product URL
-is `https://site.scaffold`; the canonical source repo is `Jesssullivan/oauth-mux`
+is `https://scheduling-bridge.tinyland.dev`; the canonical source repo is `Jesssullivan/oauth-mux`
 (now public, decided in `oauth-mux/docs/spec/repository-ownership-and-url-2026-04-28.md`).
 
 Prior planning lives in
@@ -25,7 +25,7 @@ the Codex Max cohort is four routes, evidence is capability-scoped, and public
 claims must not imply provider-originated in-session quota fallback,
 unmanaged TUI hot-swap, same-thread quota recovery, or per-request muxing. The
 product gap is adoption: first-run clarity, website narrative, contributor
-surface, and launch-channel choreography. `site.scaffold` is the first
+surface, and launch-channel choreography. `scheduling-bridge.tinyland.dev` is the first
 deliverable in that gap and the execution vehicle for `TIN-734`.
 
 ## Founding Prompt Alignment
@@ -114,10 +114,10 @@ What we explicitly do NOT use:
   the source repo (`Jesssullivan/oauth-mux`) is personal-FOSS for trust and
   authorship clarity; the website lives in `tinyland-inc` so the launch /
   release infrastructure side stays org-backed.
-- **Name**: `site.scaffold` (matches the deployed hostname; ergonomic for
+- **Name**: `scheduling-bridge.tinyland.dev` (matches the deployed hostname; ergonomic for
   search and bookmark).
 - **Visibility**: currently GitHub `INTERNAL`. Stay internal through M0
-  bootstrap. Flip public at the same time as `site.scaffold` DNS goes live
+  bootstrap. Flip public at the same time as `scheduling-bridge.tinyland.dev` DNS goes live
   (start of M4).
 - **Branch protection**: enable on `main` after the first green CI run.
   Required checks: the CI workflow's lint/typecheck/build/test jobs. Linear
@@ -133,7 +133,7 @@ What we explicitly do NOT use:
   artifact: `build/` (SvelteKit adapter-static output). Workflow shape: clone
   `Jesssullivan/jesssullivan.github.io/.github/workflows/deploy-pages.yml`,
   drop the `refresh-profile` job. PR builds verify without deploying.
-- **Custom domain**: `site.scaffold`. Configure the repo Pages custom domain via
+- **Custom domain**: `scheduling-bridge.tinyland.dev`. Configure the repo Pages custom domain via
   GitHub API after DNS is ready. Keep `static/CNAME` as a single-line
   portability artifact if it survives adapter-static output, but do not treat
   it as the source of truth for Actions-based Pages.
@@ -151,7 +151,7 @@ What we explicitly do NOT use:
   ticket at 24h. CAA on `xoxd.ai` is empty (verified) — no blocker. Reference
   cert at `transscendsurvival.org` is Let's Encrypt R13 with 90-day rotation.
 - **Redirects**:
-  - `oauth-mux.xoxd.ai` → `site.scaffold` via Cloudflare Redirect Rule after the
+  - `oauth-mux.xoxd.ai` → `scheduling-bridge.tinyland.dev` via Cloudflare Redirect Rule after the
     canonical domain is healthy. Do not plan a multi-domain GitHub Pages CNAME
     file for this repo unless the GitHub API and docs confirm the exact shape.
   - `omux.tinyland.dev` deferred until Tinyland surfaces a project page
@@ -381,7 +381,7 @@ No DNS, Pages, dependency, or application scaffold mutation happens until this
 is in place.
 
 Deliverables:
-- Linear project `oauth-mux Website Launch (site.scaffold)` attached to
+- Linear project `oauth-mux Website Launch (scheduling-bridge.tinyland.dev)` attached to
   `Presence And Narrative`
 - M0-M5 Linear milestones with target dates
 - TIN-734 linked to the new project as the umbrella issue
@@ -530,27 +530,27 @@ Acceptance:
 
 ### M4 — First-Viewport Launch (target +3 days)
 
-Goal: `https://site.scaffold` is live. Repo is public. README links to it.
+Goal: `https://scheduling-bridge.tinyland.dev` is live. Repo is public. README links to it.
 Soft-launch posts ready (not yet distributed).
 
 Deliverables:
 - DNS CNAME record in Cloudflare
-- Pages custom domain configured for `site.scaffold`; `static/CNAME` may be
+- Pages custom domain configured for `scheduling-bridge.tinyland.dev`; `static/CNAME` may be
   present as a single-line artifact but is not the source of truth
 - Pages source set to `actions` via `gh api`
-- Custom domain set to `site.scaffold` via `gh api`
+- Custom domain set to `scheduling-bridge.tinyland.dev` via `gh api`
 - HTTPS enforce after TLS provisions
 - Repo flipped to public visibility
 - `README.md` rewritten (replace 14-byte placeholder with real project
   description, link to live site)
-- `oauth-mux/README.md` updated with link to `https://site.scaffold` (PR
+- `oauth-mux/README.md` updated with link to `https://scheduling-bridge.tinyland.dev` (PR
   against `Jesssullivan/oauth-mux`)
 - Soft-launch post drafts in `docs/launch/` (GitHub release notes, npm
   package README, Tinyland blog post, MCP/agent-tooling community posts)
 - Live QA pass: every link works, no 404s, mobile renders, dark mode toggles
 
 Acceptance:
-- `curl -sI https://site.scaffold/` returns 200 with `server: GitHub.com`
+- `curl -sI https://scheduling-bridge.tinyland.dev/` returns 200 with `server: GitHub.com`
 - TLS cert state is `approved`, `https_enforced: true`
 - Lighthouse all green on the live URL
 - No browser console errors
@@ -601,7 +601,7 @@ Monday-Thursday is execution. M0 is exception (3 days).
 
 ## Linear And GitHub Project Structure
 
-- **Project name**: `oauth-mux Website Launch (site.scaffold)`
+- **Project name**: `oauth-mux Website Launch (scheduling-bridge.tinyland.dev)`
 - **Team**: `Tinyland`
 - **Initiative**: attach to `Presence And Narrative` (id
   `251d60af-fa62-454f-9b7c-9bf0da733b70`, status `Planned`). This is
@@ -636,7 +636,7 @@ go-live lands at M4).
 
 GitHub Project v2:
 
-- **Name**: `site.scaffold Launch`
+- **Name**: `scheduling-bridge.tinyland.dev Launch`
 - **Owner**: `tinyland-inc`
 - **Purpose**: public-facing contributor/project board after the repo is public.
   Linear remains the authoritative execution tracker.
@@ -702,7 +702,7 @@ Optional gates (advisory at M0, blocking at M3+):
    light/dark mode toggle (handled by data-mode attribute, not separate
    theme), no theme-picker UI.
 4. **`oauth-mux.xoxd.ai` redirect**: default is a Cloudflare Redirect Rule to
-   `https://site.scaffold` after the canonical Pages domain is healthy.
+   `https://scheduling-bridge.tinyland.dev` after the canonical Pages domain is healthy.
 5. **Skeleton v5 → GA upgrade path**: post-launch watch ticket only. Do not
    spend launch-path complexity on v5 until the house QA project proves it.
 6. **Provider matrix regen cadence**: manual via `just regen-providers`?
@@ -732,8 +732,8 @@ Optional gates (advisory at M0, blocking at M3+):
 - This spec: `docs/spec/omux-website-bootstrap-2026-04-29.md` (revise in
   place; new dated spec only when the topic changes)
 - Linear: `TIN-734` umbrella + new project `oauth-mux Website Launch
-  (site.scaffold)` + M0-M5 milestones
-- GitHub: `tinyland-inc/site.scaffold` (this repo) + `Jesssullivan/oauth-mux`
+  (scheduling-bridge.tinyland.dev)` + M0-M5 milestones
+- GitHub: `tinyland-inc/scheduling-bridge.tinyland.dev` (this repo) + `Jesssullivan/oauth-mux`
   (canonical source)
 - Skeleton release feed: https://github.com/skeletonlabs/skeleton/releases
 - Skeleton v5 watch only: https://github.com/skeletonlabs/skeleton/milestone/7

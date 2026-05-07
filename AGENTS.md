@@ -1,4 +1,4 @@
-# Agent Notes — site.scaffold
+# Agent Notes — scheduling-bridge.tinyland.dev
 
 This file is the working contract for coding agents and LLMs operating in any
 sister site spawned from this scaffold.
@@ -48,7 +48,7 @@ gRPC / signed JSON snapshots from `tinyland.dev`.
 
 ## Per-Site Customization Checklist
 
-After `gh repo create --template tinyland-inc/site.scaffold`:
+After `gh repo create --template tinyland-inc/scheduling-bridge.tinyland.dev`:
 
 1. `direnv allow`
 2. `scripts/rebrand.sh <site.example.com>` — rewrites name strings, env vars,

@@ -1,13 +1,13 @@
-# site.scaffold post-launch verification — 2026-04-30
+# scheduling-bridge.tinyland.dev post-launch verification — 2026-04-30
 
 Closes the bulk of TIN-786 acceptance criteria. Site has been public-flipped (TIN-784) and the 7-phase visual QA rebuild (TIN-801) shipped. This report captures real Lighthouse numbers against the live custom-domain site and itemises the follow-up tickets for the residual gaps.
 
 ## Site under test
 
-- **URL**: <https://site.scaffold/>
+- **URL**: <https://scheduling-bridge.tinyland.dev/>
 - **DNS**: Cloudflare CNAME `omux` → `tinyland-inc.github.io` (gray-cloud, TTL 300, zone `b73b535ab540613afb210dab766f195d`)
 - **TLS**: GitHub-managed Let's Encrypt; `https_enforced: true`
-- **Repo visibility**: PUBLIC (`tinyland-inc/site.scaffold`)
+- **Repo visibility**: PUBLIC (`tinyland-inc/scheduling-bridge.tinyland.dev`)
 - **Last deploy**: PR #50 (TIN-801 7D saturn identity) at `2026-04-30T02:20:21Z`
 - **Verification run**: 2026-04-30 via `npx -y lighthouse` against headless Chromium 147.0.7727.15 (Playwright build), throttling-method=provided for desktop, default mobile throttling
 

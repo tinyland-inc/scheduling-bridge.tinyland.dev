@@ -2,7 +2,7 @@
 // XML lives at build/sitemap.xml. Add additional routes here as M5 lands them.
 import type { RequestHandler } from './$types';
 
-const SITE = 'https://site.scaffold';
+const SITE = 'https://scheduling-bridge.tinyland.dev';
 const PAGES: string[] = ['/', '/agent-snippet', '/api/providers'];
 
 export const prerender = true;

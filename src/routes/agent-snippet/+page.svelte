@@ -31,9 +31,9 @@ Agent rules:
   Do not infer codex-max availability from Spark/mini/credit dashboard text.
   Do not pass --confirm-spend or run live probes unless the user explicitly authorizes spend.
 
-Provider matrix (machine-readable): https://site.scaffold/api/providers
+Provider matrix (machine-readable): https://scheduling-bridge.tinyland.dev/api/providers
 Source: https://github.com/Jesssullivan/oauth-mux
-Site:   https://site.scaffold
+Site:   https://scheduling-bridge.tinyland.dev
 `;
 
 	const toaster = createToaster({ placement: 'bottom-end', overlap: true });
@@ -91,7 +91,7 @@ Site:   https://site.scaffold
 			<aside class="border-l-2 border-primary-500/40 pl-6">
 				<p class="text-sm text-surface-700-300">
 					The provider matrix is also available at
-					<a class="anchor font-mono" href="/api/providers">https://site.scaffold/api/providers</a>
+					<a class="anchor font-mono" href="/api/providers">https://scheduling-bridge.tinyland.dev/api/providers</a>
 					as machine-readable JSON.
 				</p>
 			</aside>
