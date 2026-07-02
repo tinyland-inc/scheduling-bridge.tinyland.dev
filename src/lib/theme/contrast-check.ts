@@ -1,6 +1,6 @@
 import type { ContrastResult, WCAGLevel } from '@tummycrypt/tinyland-color-utils';
 
-export const omuxBrandContrast = {
+export const schedulingBridgeBrandContrast = {
 	background: '#faf6ef',
 	foreground: '#1e2832',
 	requiredLevel: 'AA',
@@ -10,4 +10,4 @@ export const omuxBrandContrast = {
 	requiredLevel: Extract<WCAGLevel, 'AA' | 'AAA'>;
 };
 
-export type OmuxBrandContrastResult = ContrastResult;
+export type SchedulingBridgeBrandContrastResult = ContrastResult;

@@ -26,4 +26,4 @@ assignees: ''
 
 ## Spec Reference
 
-<!-- Section(s) of docs/spec/omux-website-bootstrap-2026-04-29.md this touches, if any. -->
+<!-- Related spec section(s) under docs/spec/, if any. -->

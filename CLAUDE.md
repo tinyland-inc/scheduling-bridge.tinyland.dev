@@ -1,6 +1,6 @@
 # Claude — scheduling-bridge.tinyland.dev sister site
 
-This is a sister site spawned from `tinyland-inc/scheduling-bridge.tinyland.dev`. Read
+This is a sister site spawned from `tinyland-inc/site.scaffold`. Read
 `AGENTS.md` first for the authoritative operating contract.
 
 Quick reminders:

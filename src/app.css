@@ -3,10 +3,10 @@
 @import '@skeletonlabs/skeleton';
 @import '@skeletonlabs/skeleton-svelte';
 
-/* omux Warm/Pragmatic house theme (Skeleton 4 house format, OKLCH). */
-@import './lib/styles/themes/omux.css';
+/* scheduling-bridge Warm/Pragmatic house theme (Skeleton 4 house format, OKLCH). */
+@import './lib/styles/themes/scheduling-bridge.css';
 
-/* Self-hosted fonts. Inter for body + heading per omux theme.
+/* Self-hosted fonts. Inter for body + heading per scheduling-bridge theme.
    FiraCode Nerd Font Mono (patched with Nerd Font glyph icons + Fira Code
    ligatures) for all code surfaces — self-hosted woff2 below. */
 @import '@fontsource/inter/latin-400.css';
@@ -66,9 +66,9 @@ body {
 }
 
 /* Refined heading scale with theme typography variables.
-   omux theme already declares --typo-heading--*; we tune sizes + tracking
-   here so the visual hierarchy reads as a devtool launch surface (sharp,
-   tight) rather than generic prose. */
+   scheduling-bridge theme already declares --typo-heading--*; we tune sizes +
+   tracking here so the visual hierarchy reads as a devtool launch surface
+   (sharp, tight) rather than generic prose. */
 h1,
 .h1 {
 	font-size: clamp(2.5rem, 5vw + 1rem, 5rem);

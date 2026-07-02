@@ -1,15 +1,29 @@
 # scheduling-bridge.tinyland.dev
 
-> **Monadic booking middleware for hostile calendar stacks**
+> Brand site for **scheduling-bridge** — monadic booking middleware for hostile calendar stacks.
 
-Brute-force your way to scheduling freedom. Acuity, cal.com, Vagaro, GlossGenius backend interop. Companion surface to the @tummycrypt/scheduling-bridge npm package.
+This repository is the static brand surface only. The engine lives at
+[`Jesssullivan/scheduling-bridge`](https://github.com/Jesssullivan/scheduling-bridge)
+(v0.7.1, shipped as a ghcr container).
+
+## Vendor coverage
+
+Vendor claims on this site always carry a maturity qualifier —
+**production**, **read-only**, or **planned**:
+
+| Vendor      | Maturity                                              |
+| ----------- | ----------------------------------------------------- |
+| Acuity      | **Production** — the only production browser pack     |
+| Cal.com     | **Read-only** — REST support landed upstream          |
+| GlossGenius | **Planned** — not started                             |
+| Vagaro      | **Planned** — not started                             |
 
 ## Status
 
 - **Tier:** Tier 2 — strategic
-- **GTM bucket:** FOSS + paired enterprise integration
-- **Stage:** brand surface seeded from `tinyland-inc/site.scaffold` (scheduling-bridge placeholder copy)
-- **Owner:** Tinyland, Inc.
+- **GTM bucket:** FOSS; paired enterprise integration is aspirational, not an existing offering
+- **Stage:** brand surface for the scheduling-bridge engine
+- **Owner:** Jess Sullivan (sole proprietor)
 
 ## Stack
 
@@ -39,6 +53,7 @@ authority monolith.
 
 ## See also
 
+- Engine: [`Jesssullivan/scheduling-bridge`](https://github.com/Jesssullivan/scheduling-bridge)
 - House scaffold: [`tinyland-inc/site.scaffold`](https://github.com/tinyland-inc/site.scaffold)
 - Authority monolith: [`tinyland-inc/tinyland.dev`](https://github.com/tinyland-inc/tinyland.dev)
 - Internal map of all sister sites: [`tinyland-inc/tinyland.internal`](https://github.com/tinyland-inc/tinyland.internal)

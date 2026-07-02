@@ -68,17 +68,6 @@ production site or used for prerendering. None are copyleft.
                   for first-party Tinyland usage; this site uses the Zlib
                   arm exclusively.)
 
-Code samples
-------------
-
-Zig source blocks shown on the home page (CredentialLiveness +
-Availability, DegradedReason + DeadReason, MuxDecision +
-fromHttpStatus) are reproduced verbatim from
-github.com/Jesssullivan/oauth-mux at src/types.zig (MIT, same author).
-
-Verbatim quoted ranges live in src/lib/content/cli-examples.ts as
-ZIG_LIVENESS_BLOCK, ZIG_DEAD_DEGRADED, and ZIG_MUX_DECISION exports.
-
 Shiki theme
 -----------
 

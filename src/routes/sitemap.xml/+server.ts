@@ -1,9 +1,9 @@
-// M3.3 sitemap.xml endpoint. Prerendered at build time by adapter-static so the
-// XML lives at build/sitemap.xml. Add additional routes here as M5 lands them.
+// sitemap.xml endpoint. Prerendered at build time by adapter-static so the
+// XML lives at build/sitemap.xml. Add additional routes here as they land.
 import type { RequestHandler } from './$types';
 
 const SITE = 'https://scheduling-bridge.tinyland.dev';
-const PAGES: string[] = ['/', '/agent-snippet', '/api/providers'];
+const PAGES: string[] = ['/'];
 
 export const prerender = true;
 

@@ -48,7 +48,7 @@ gRPC / signed JSON snapshots from `tinyland.dev`.
 
 ## Per-Site Customization Checklist
 
-After `gh repo create --template tinyland-inc/scheduling-bridge.tinyland.dev`:
+After `gh repo create --template tinyland-inc/site.scaffold`:
 
 1. `direnv allow`
 2. `scripts/rebrand.sh <site.example.com>` — rewrites name strings, env vars,

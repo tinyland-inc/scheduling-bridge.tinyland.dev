@@ -1,8 +1,8 @@
 import { Effect, Exit, Layer } from 'effect';
 
 /**
- * Empty placeholder layer. Real services land in M3+ when build-time
- * data ingestion and provider-matrix loading need typed dependencies.
+ * Empty placeholder layer. Real services land when build-time data
+ * ingestion (federated tinyland.dev snapshots) needs typed dependencies.
  */
 export const AppLayer = Layer.empty;
 

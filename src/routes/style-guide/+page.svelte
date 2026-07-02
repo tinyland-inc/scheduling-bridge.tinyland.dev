@@ -6,7 +6,7 @@
 	 * or via accidental crawl. Renders every theme color scale × shade,
 	 * representative color-pair utility classes (verifies the
 	 * `@tummycrypt/vite-plugin-skeleton-colors` pipeline still synthesises
-	 * pair classes under the omux theme), typography hierarchy, every
+	 * pair classes under the scheduling-bridge theme), typography hierarchy, every
 	 * Skeleton 4 component required for M2 (AppBar, Avatar, Tabs, Tooltip,
 	 * Switch, Toast, Popover, Dialog), and a side-by-side light/dark
 	 * comparison region scoped via `data-mode` attributes (does NOT mutate
@@ -36,7 +36,7 @@
 	type Shade = (typeof SHADES)[number];
 
 	/**
-	 * Source-of-truth OKLCH ramps from src/lib/styles/themes/omux.css.
+	 * Source-of-truth OKLCH ramps from src/lib/styles/themes/scheduling-bridge.css.
 	 * Duplicated here for display-only annotation (we don't import the
 	 * theme CSS as a JS module — Tailwind 4 owns its compilation). If
 	 * theme tokens change, refresh this map; the swatches will still
@@ -240,7 +240,7 @@
 	/**
 	 * Color-pair smoke list — at least one example per supported property
 	 * prefix (bg, text, border, ring) using common pair shades. Verifies
-	 * the v4 plugin still emits pair utilities under the omux theme.
+	 * the v4 plugin still emits pair utilities under the scheduling-bridge theme.
 	 */
 	const PAIR_SAMPLES: { class: string; label: string }[] = [
 		{ class: 'bg-surface-100-900 text-primary-500-400', label: 'bg-surface-100-900 text-primary-500-400' },
@@ -284,7 +284,7 @@
 </script>
 
 <svelte:head>
-	<title>Style guide · omux</title>
+	<title>Style guide · scheduling-bridge</title>
 	<meta name="robots" content="noindex,nofollow" />
 </svelte:head>
 
@@ -307,7 +307,7 @@
 			<h1 class="mt-1 text-4xl font-bold tracking-tight">Style guide</h1>
 			<p class="text-surface-700-300 mt-3 max-w-prose">
 				Smoke test for theme scales, typography, and Skeleton 4 components under the
-				<code class="bg-surface-100-900 rounded px-1">omux</code> house theme. Not part of production navigation.
+				<code class="bg-surface-100-900 rounded px-1">scheduling-bridge</code> house theme. Not part of production navigation.
 			</p>
 		</header>
 
@@ -316,7 +316,7 @@
 			<h2 id="scales-heading" class="text-2xl font-bold">Color scales</h2>
 			<p class="text-surface-700-300 max-w-prose">
 				Seven scales × eleven shades. Each swatch is annotated with its OKLCH value (sourced from
-				<code class="bg-surface-100-900 rounded px-1">themes/omux.css</code>).
+				<code class="bg-surface-100-900 rounded px-1">themes/scheduling-bridge.css</code>).
 			</p>
 			{#each SCALES as scale (scale)}
 				<div class="flex flex-col gap-2">
@@ -346,7 +346,7 @@
 				pipeline emits pair utilities (<code class="bg-surface-100-900 rounded px-1">bg</code>,
 				<code class="bg-surface-100-900 rounded px-1">text</code>,
 				<code class="bg-surface-100-900 rounded px-1">border</code>,
-				<code class="bg-surface-100-900 rounded px-1">ring</code>) for the omux theme.
+				<code class="bg-surface-100-900 rounded px-1">ring</code>) for the scheduling-bridge theme.
 			</p>
 			<div class="grid gap-3 md:grid-cols-2">
 				{#each PAIR_SAMPLES as pair (pair.label)}
@@ -371,12 +371,12 @@
 					A paragraph of prose with an <code class="bg-surface-100-900 rounded px-1">inline code</code> token, an
 					<a href="#typo-heading" class="text-primary-500-400 underline">anchor link</a> (tab to focus to verify focus
 					ring), and an <em>emphasised</em> phrase. Skeleton's anchor tokens drive hover, active, and focus states from the
-					omux theme.
+					scheduling-bridge theme.
 				</p>
 				<pre class="bg-surface-100-900 my-4 overflow-x-auto rounded p-4 text-sm"><code
-						>{`// pre+code block — used in Hero and Install sections
-import { mux } from 'oauth-mux';
-const session = await mux.connect({ providers: ['google', 'github'] });`}</code
+						>{`// pre+code block — representative code sample
+const booking = await bridge.schedule({ vendor: "acuity", slot });
+console.log(booking.confirmationId);`}</code
 					></pre>
 				<blockquote class="border-primary-500-400 my-4 border-l-4 pl-4 italic">
 					Blockquote — Skeleton 4 typography tokens drive bordered quotes.
@@ -402,7 +402,7 @@ const session = await mux.connect({ providers: ['google', 'github'] });`}</code
 				<h3 class="font-mono text-sm uppercase">AppBar (mini)</h3>
 				<AppBar class="bg-surface-100-900 rounded">
 					<AppBar.Toolbar class="px-3 py-2">
-						<AppBar.Lead><span class="font-mono text-sm font-bold">omux</span></AppBar.Lead>
+						<AppBar.Lead><span class="font-mono text-sm font-bold">scheduling-bridge</span></AppBar.Lead>
 						<AppBar.Headline><span class="text-xs">mini variant</span></AppBar.Headline>
 						<AppBar.Trail><span class="text-xs">trail</span></AppBar.Trail>
 					</AppBar.Toolbar>
@@ -458,12 +458,12 @@ const session = await mux.connect({ providers: ['google', 'github'] });`}</code
 						</Tabs.Trigger>
 					</Tabs.List>
 					<Tabs.Content value="overview" class="py-3 text-sm">
-						oauth-mux multiplexes OAuth providers behind a single session interface.
+						scheduling-bridge routes bookings through hostile calendar stacks via a monadic DAG.
 					</Tabs.Content>
 					<Tabs.Content value="install" class="py-3 text-sm">
-						<code class="bg-surface-100-900 rounded px-1">npm i oauth-mux</code>
+						<code class="bg-surface-100-900 rounded px-1">docker pull ghcr.io/jesssullivan/scheduling-bridge</code>
 					</Tabs.Content>
-					<Tabs.Content value="usage" class="py-3 text-sm">See the install section on the home page.</Tabs.Content>
+					<Tabs.Content value="usage" class="py-3 text-sm">See the engine repo for usage details.</Tabs.Content>
 				</Tabs>
 			</div>
 
