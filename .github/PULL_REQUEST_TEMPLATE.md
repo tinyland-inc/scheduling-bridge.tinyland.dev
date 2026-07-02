@@ -8,7 +8,7 @@
 
 ## Spec Reference
 
-<!-- Section(s) of docs/spec/omux-website-bootstrap-2026-04-29.md this PR implements. -->
+<!-- Related spec section(s) under docs/spec/ this PR implements, if any. -->
 
 ## Validation
 

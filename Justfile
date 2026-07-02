@@ -116,12 +116,6 @@ analyze:
 bazel-graph:
     cd {{ root }} && bazelisk mod graph
 
-# Refresh the OAuth provider matrix from the local oauth-mux checkout
-regen-providers:
-    @echo "Regenerating provider matrix from ../oauth-mux..."
-    @test -d {{ root }}/../oauth-mux || { echo "oauth-mux not found at ../oauth-mux"; exit 1; }
-    cd {{ root }} && pnpm exec tsx scripts/regen-providers.mts
-
 # Generate changelog (git-cliff)
 changelog:
     git-cliff --output CHANGELOG.md

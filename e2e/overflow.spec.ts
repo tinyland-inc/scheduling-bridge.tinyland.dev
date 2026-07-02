@@ -1,16 +1,11 @@
 import { expect, test } from '@playwright/test';
 
-// TIN-802 regression guard. Two failures from the original launch evidence:
-//   1. Home page at 390px viewport had documentElement.scrollWidth = 822 vs
-//      innerWidth = 390 (provider matrix table forced horizontal document
-//      overflow).
-//   2. /agent-snippet and /style-guide/ rendered the home-only section nav,
-//      producing 17 hash targets per page that didn't resolve to any element
-//      (e.g. /agent-snippet#problem).
-//
-// These tests pin both: no document-level horizontal overflow at the four
-// canonical breakpoints, and every same-page hash link on the home route
-// resolves to an actual element.
+// TIN-802 regression guard (inherited from the scaffold heritage):
+//   1. No document-level horizontal overflow at the four canonical
+//      breakpoints (wide tables/code blocks must scroll in their own
+//      container, never the document).
+//   2. Every same-page hash link resolves to an actual element on the page
+//      that renders it.
 
 const breakpoints = [
 	{ label: 'mobile-small', width: 390, height: 1200 },
@@ -51,7 +46,7 @@ test('non-home routes have no dead same-page hash links', async ({ page }) => {
 	// Same-page hashes (#foo) must resolve to an element on that page. Cross-page
 	// hashes use absolute form (/#foo) and are validated separately at build time
 	// by SvelteKit's prerender handleMissingId check.
-	for (const route of ['/agent-snippet/', '/style-guide/?guide=1']) {
+	for (const route of ['/style-guide/?guide=1']) {
 		await page.goto(route);
 		await page.waitForLoadState('networkidle');
 		const broken = await page.evaluate(() => {

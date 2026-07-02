@@ -1,8 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="omux">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="scheduling-bridge">
   <rect width="64" height="64" rx="12" fill="#1e2832" />
   <path
-    fill="#faf6ef"
-    d="M16 32c0-9.39 6.84-16 16-16 9.18 0 16 6.61 16 16s-6.82 16-16 16c-9.16 0-16-6.61-16-16Zm8.31 0c0 5.04 3.14 8.58 7.69 8.58s7.69-3.54 7.69-8.58S36.55 23.42 32 23.42 24.31 26.96 24.31 32Z"
+    fill="#d17a4a"
+    d="M10 20c7 11 15 16.5 22 16.5S47 31 54 20v8c-7 9.5-15 14.5-22 14.5S17 37.5 10 28Z"
   />
-  <path fill="#d17a4a" d="M45.1 18.9h8v8h-8zM10.9 37.1h8v8h-8z" />
+  <path fill="#faf6ef" d="M16 22h5v22h-5zM43 22h5v22h-5z" />
+  <rect x="8" y="44" width="48" height="5" rx="2.5" fill="#faf6ef" />
 </svg>

@@ -26,4 +26,4 @@ assignees: ''
 
 <!-- Console errors, screenshots, network logs, etc. -->
 
-<!-- For oauth-mux CLI bugs, file at https://github.com/Jesssullivan/oauth-mux/issues. This template is for the website only. -->
+<!-- For scheduling-bridge engine bugs, file at https://github.com/Jesssullivan/scheduling-bridge/issues. This template is for the website only. -->

@@ -1,7 +1,7 @@
-// Build-time Shiki highlighter. Used by `+page.server.ts` during prerender;
-// no client runtime usage. See docs/spec/omux-website-bootstrap-2026-04-29.md
-// § Information Architecture (M3) for the constraint that all syntax
-// highlighting is pre-rendered at build time.
+// Build-time Shiki highlighter for prerendered code samples; no client
+// runtime usage. House constraint: all syntax highlighting is pre-rendered
+// at build time (currently unused — kept for future prerendered code
+// surfaces).
 
 import { createHighlighter, type Highlighter } from 'shiki';
 

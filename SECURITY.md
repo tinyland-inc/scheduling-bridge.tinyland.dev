@@ -12,11 +12,11 @@ this repository:
 
 <https://github.com/tinyland-inc/scheduling-bridge.tinyland.dev/security/advisories/new>
 
-For vulnerabilities in the **`oauth-mux` tool itself** (the upstream
-Zig project that this site is about), report against the canonical
+For vulnerabilities in the **`scheduling-bridge` engine itself** (the
+upstream project that this site is about), report against the canonical
 source repo instead:
 
-<https://github.com/Jesssullivan/oauth-mux/security/advisories/new>
+<https://github.com/Jesssullivan/scheduling-bridge/security/advisories/new>
 
 ## Scope
 
@@ -24,14 +24,14 @@ In scope for this repository:
 
 - Build / CI supply-chain issues
 - Static site content that misrepresents the security posture of
-  oauth-mux
+  scheduling-bridge
 - Secrets accidentally committed to history
 - Third-party dep vulnerabilities affecting the build pipeline
 
 Out of scope:
 
 - Cosmetic / SEO / accessibility issues — please open a normal issue
-- Vulnerabilities in `oauth-mux` itself — see upstream link above
+- Vulnerabilities in `scheduling-bridge` itself — see upstream link above
 - DDoS / availability — site is on GitHub Pages with no privileged
   routes; standard Pages SLO applies
 
