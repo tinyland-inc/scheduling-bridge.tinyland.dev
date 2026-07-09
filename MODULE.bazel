@@ -40,7 +40,7 @@ bazel_dep(name = "aspect_rules_swc", version = "2.6.1")
 # Tinyland building-block deps via tinyland-inc/bazel-registry
 # (audit: docs/spec/bazel-catalog-audit-2026-04-29.md)
 bazel_dep(name = "tummycrypt_tinyland_color_utils", version = "0.2.3")
-bazel_dep(name = "tummycrypt_vite_plugin_a11y", version = "0.2.2")
+bazel_dep(name = "tummycrypt_vite_plugin_a11y", version = "0.2.3")
 bazel_dep(name = "tummycrypt_vite_plugin_skeleton_colors", version = "0.2.2")
 bazel_dep(name = "tummycrypt_tinyvectors", version = "0.2.5")
 
