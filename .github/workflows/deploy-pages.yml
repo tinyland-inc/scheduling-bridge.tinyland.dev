@@ -34,7 +34,7 @@ jobs:
       # cloudflare/wrangler-action installs Wrangler through pnpm when needed.
       # The Nix devshell keeps pnpm inside `nix develop --command`, so expose
       # the same pinned pnpm to the host action environment first.
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v6
         with:
           version: 10.13.1
           run_install: false
